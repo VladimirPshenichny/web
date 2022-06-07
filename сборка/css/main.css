@@ -1,0 +1,35 @@
+h1{
+	text-align: center;
+	color : #EF7E56;
+}
+
+body{
+	background-color: #305973;
+}
+
+img{
+	height: 500px;
+	width: 900px;
+	float: right;
+}
+
+p{
+	font-size: 175%;
+	color : #DED5C4;
+}
+
+ul li{
+	float: left;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a{
+	color: #EF7E56;
+	text-decoration: none;
+}
+
+nav{ 
+	display: inline-block;
+	text-align: center;
+}

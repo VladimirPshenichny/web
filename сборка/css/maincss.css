@@ -1,0 +1,41 @@
+.clearfix:after {
+ content: '';
+ display: table;
+ width: 100%;
+ clear: both;
+}
+
+ul li{
+	font-size: 250%;
+	color : #DED5C4
+}
+
+h1{
+	text-align: center;
+	color : #EF7E56;
+}
+
+body{
+	background-color :#305973;
+}
+
+img{
+	height: 500px;
+	width: 1200px;
+	float: right;
+}
+
+ul{
+	float: left;
+}
+
+p{
+	text-align: center;
+	font-size: 400%;
+	color : #EF7E56;
+}
+
+a{
+	text-decoration: none;
+	color : #E9D2B3;
+}
