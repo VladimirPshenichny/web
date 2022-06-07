@@ -1,0 +1,107 @@
+@fpz: 25px;
+@fpf: 70px;
+
+::-webkit-input-placeholder {color:#676767;}
+::-moz-placeholder          {color:#676767;}/* Firefox 19+ */
+:-moz-placeholder           {color:#676767;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#676767;}
+
+.inform{
+  background-color: black;
+  border-bottom: 1px solid #676767;
+  min-height: 200px;
+  padding: 20px;
+
+  &-text{
+    color: #5cc1c2;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+  }
+
+  &-content{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+
+
+    input {
+      width: 30%;
+      background-color: #222;
+      color: #676767;
+      -webkit-border-top-left-radius: @fpz;
+      -webkit-border-top-right-radius: @fpz;
+      -moz-border-radius-topleft: @fpz;
+      -moz-border-radius-topright: @fpz;
+      border-top-left-radius: @fpz;
+      border-top-right-radius: @fpz;
+      -webkit-border-bottom-left-radius: @fpz;
+      -webkit-border-bottom-right-radius: @fpz;
+      -moz-border-radius-bottomleft: @fpz;
+      -moz-border-radius-bottomright: @fpz;
+      border-bottom-left-radius: @fpz;
+      border-bottom-right-radius: @fpz;
+      border: 1px;
+      padding: 12px;
+      font-weight: 400;
+      background-color: rgba(16, 16, 16, 0.9);
+    }
+    /*
+    &-text{
+      width: 30%;
+
+    }
+
+    &-email{
+      width: 30%;
+    }
+
+    &-but{
+      width: 30%;
+    }
+    */
+  }
+}
+
+@media (max-device-width: 480px) {
+  .inform{
+    min-height: 1100px;
+      &-text{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 7rem;
+      }
+
+      &-content{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        input{
+          width: 100%;
+          border: 3px;
+          margin: 30px;
+          padding: 40px;
+          font-weight: 700;
+          font-size: 3rem;
+
+          -webkit-border-top-left-radius: @fpf;
+          -webkit-border-top-right-radius: @fpf;
+          -moz-border-radius-topleft: @fpf;
+          -moz-border-radius-topright: @fpf;
+          border-top-left-radius: @fpf;
+          border-top-right-radius: @fpf;
+          -webkit-border-bottom-left-radius: @fpf;
+          -webkit-border-bottom-right-radius: @fpf;
+          -moz-border-radius-bottomleft: @fpf;
+          -moz-border-radius-bottomright: @fpf;
+          border-bottom-left-radius: @fpf;
+          border-bottom-right-radius: @fpf;
+        }
+      }
+  }
+}

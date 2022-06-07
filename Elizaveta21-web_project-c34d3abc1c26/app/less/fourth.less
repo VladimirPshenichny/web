@@ -1,0 +1,607 @@
+.fourth{
+  background-color: black;
+  min-height: 600px;
+
+  align-items: center;
+
+  &-title{
+    text-align: center;
+    color:#5cc1c2;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    //position: absolute;
+    //right: 15%;
+    //left: 15%;
+  }
+
+  &-tit{
+    text-align: center;
+    color: #676767;
+    font-size: 1rem;
+    //margin-top: 0;
+    //margin-bottom: 15px;
+  }
+
+  &-fdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &-one{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin-right: 5%;
+
+      &-title{
+        font-weight: 500;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: #3b3b3b;
+      }
+
+      &-text{
+        font-size: 1.4rem;
+        color: #676767;
+      }
+
+    }
+
+    &-two{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      color: #676767;
+      width: 50%;
+
+      &-b{
+        display: flex;
+        flex-direction: row;
+
+        &-text{
+          font-size: 1.5rem;
+          color: #676767;
+        }
+
+        &-image{
+          margin-right: 2%;
+          margin-top: 10px;
+          height: 50px;
+          width: 50px;
+        }
+
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .fourth{
+    &-fdiv{
+      right: 10%;
+      left: 10%;
+      &-one{
+        &-title{
+          font-size: 1.4rem;
+        }
+        &-text{
+          font-size: 1.4rem;
+        }
+      }
+
+      &-two{
+        &-b{
+          &-text{
+            font-size: 1.4rem;
+            color: #676767;
+          }
+
+          &-image{
+            height: 45px;
+            width: 45px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .fourth{
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 2.4rem;
+      text-align: center;
+    }
+    &-fdiv{
+      &-one{
+        &-title{
+          font-size: 1.2rem;
+        }
+        &-text{
+          font-size: 1.2rem;
+        }
+      }
+
+      &-two{
+        &-b{
+          &-text{
+            font-size: 1.2rem;
+            color: #676767;
+          }
+
+          &-image{
+            height: 40px;
+            width: 40px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .fourth {
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 2.3rem;
+      text-align: center;
+    }
+
+    &-tit{
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      //flex-direction: column;
+
+      &-one{
+        &-title{
+          font-size: 1rem;
+        }
+
+        &-text{
+          font-size: 1.1rem;
+        }
+      }
+
+      &-two{
+        &-b{
+          &-text{
+            font-size: 1.1rem;
+          }
+
+          &-image{
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 602px) {
+  .fourth {
+    min-height: 700px;
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 2.2rem;
+      text-align: center;
+    }
+
+    &-tit{
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      flex-direction: column;
+
+      &-one{
+        width: 95%;
+        text-align: center;
+        &-title{
+          font-size: 1rem;
+        }
+
+        &-text{
+          font-size: 1rem;
+        }
+      }
+
+      &-two{
+        width: 95%;
+        text-align: center;
+        &-b{
+          &-text{
+            font-size: 1rem;
+          }
+
+          &-image{
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .fourth {
+    min-height: 730px;
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 1.9rem;
+      text-align: center;
+    }
+
+    &-tit{
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 0.7rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      flex-direction: column;
+
+      &-one{
+        width: 90%;
+        text-align: center;
+        &-title{
+          font-size: 0.9rem;
+        }
+
+        &-text{
+          font-size: 0.9rem;
+        }
+      }
+
+      &-two{
+        width: 90%;
+        text-align: center;
+        &-b{
+          &-text{
+            font-size: 0.9rem;
+          }
+
+          &-image{
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .fourth {
+    min-height: 730px;
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 1.7rem;
+      text-align: center;
+    }
+
+    &-tit{
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 0.4rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      flex-direction: column;
+
+      &-one{
+        width: 90%;
+        text-align: center;
+        &-title{
+          font-size: 0.9rem;
+        }
+
+        &-text{
+          font-size: 0.9rem;
+        }
+      }
+
+      &-two{
+        width: 90%;
+        text-align: center;
+        &-b{
+          &-text{
+            font-size: 0.9rem;
+          }
+
+          &-image{
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 295px) {
+  .fourth {
+    min-height: 730px;
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 1.7rem;
+      text-align: center;
+    }
+
+    &-tit{
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 0.3rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      flex-direction: column;
+
+      &-one{
+        width: 90%;
+        text-align: center;
+        &-title{
+          font-size: 0.7rem;
+        }
+
+        &-text{
+          font-size: 0.7rem;
+        }
+      }
+
+      &-two{
+        width: 90%;
+        text-align: center;
+        &-b{
+          &-text{
+            font-size: 0.7rem;
+          }
+
+          &-image{
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 255px) {
+  .fourth {
+    min-height: 630px;
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    &-tit{
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 0.4rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      flex-direction: column;
+
+      &-one{
+        width: 90%;
+        text-align: center;
+        &-title{
+          font-size: 0.7rem;
+        }
+
+        &-text{
+          font-size: 0.7rem;
+        }
+      }
+
+      &-two{
+        width: 90%;
+        text-align: center;
+        &-b{
+          &-text{
+            font-size: 0.7rem;
+          }
+
+          &-image{
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 222px) {
+  .fourth {
+    min-height: 630px;
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 1.7rem;
+      text-align: center;
+    }
+
+    &-tit{
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 0.3rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      flex-direction: column;
+
+      &-one{
+        width: 90%;
+        text-align: center;
+        &-title{
+          font-size: 0.6rem;
+        }
+
+        &-text{
+          font-size: 0.6rem;
+        }
+      }
+
+      &-two{
+        width: 90%;
+        text-align: center;
+        &-b{
+          &-text{
+            font-size: 0.6rem;
+          }
+
+          &-image{
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 183px) {
+  .fourth {
+    min-height: 580px;
+    &-title{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    &-tit{
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 0.2rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      flex-direction: column;
+
+      &-one{
+        width: 90%;
+        text-align: center;
+        &-title{
+          font-size: 0.5rem;
+        }
+
+        &-text{
+          font-size: 0.5rem;
+        }
+      }
+
+      &-two{
+        width: 90%;
+        text-align: center;
+        &-b{
+          &-text{
+            font-size: 0.5rem;
+          }
+
+          &-image{
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-device-width: 480px) {
+  .fourth {
+    min-height: 3100px;
+    &-title{
+      font-size: 6rem;
+      margin-top: 10%;
+      text-align: center;
+    }
+
+    &-tit{
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    &-fdiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      right: 0;
+      left: 0;
+      &-one{
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        align-items: center;
+
+        &-title{
+          font-size: 3.5rem;
+        }
+
+        &-text{
+          font-size: 3.5rem;
+        }
+      }
+
+       &-two{
+         width: 90%;
+
+         //justify-content: flex-start;
+          &-b{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            &-text{
+              font-size: 3rem;
+            }
+            img{
+              width: 200px;
+              height: 200px;
+            }
+          }
+       }
+    }
+  }
+}
