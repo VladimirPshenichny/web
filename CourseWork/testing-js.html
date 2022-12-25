@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Проверка уровня знаний по JavaScript</title>
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/adaptive.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/site.webmanifest">
+      <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5f50cb">
+      <meta name="msapplication-TileColor" content="#603cba">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Favicon -->
+   </head>
+   <body>
+      <a href="https://forms.gle/J1XLq1xo13SU3tt76" target="_blank" class="questions">
+         <img src="img/wolf.png" alt="" class="wolf1">
+         <img src="img/wolf2.png" alt="" class="wolf2">
+         <p class="text-dark">Есть вопросы?</p>
+      </a>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3 fixed-top">
+            <div class="container">
+               <a class="navbar-brand" href="#">
+               <img class="logo" src="img/logo.png" alt="">
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">О проекте</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Тесты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="testing-cpp.html">C++</a>
+                           <a class="dropdown-item" href="testing-c-sharp.html">C#</a>
+                           <a class="dropdown-item" href="testing-js.html">JavaScript</a>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#rating">Рейтинг</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <a href="sign-in.html" class="btn btn-outline-success my-2 my-sm-0">Авторизация</a>
+                  </form>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section class="bg-light" id="top">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="question col-xl-8 col-lg-9 col-md-11 mt-5 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">1</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет alert?</h5>
+                        <div class="code">
+                           let str = "Hello";<br>
+                           str.something = 5;<br>
+                           alert(str.something);<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1" name="r1" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1">5</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2" name="r1" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2">undefined</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3" name="r1" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3">Будет ошибка</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">2</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет выражение ниже?</h5>
+                        <div class="code">
+                           let a = new Array(1,2), b = new Array(3);<br>
+                           alert(a[0] + b[0]);<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-2" name="r2" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-2">1</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-2" name="r2" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-2">4</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-2" name="r2" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-2">undefined</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-2" name="r2" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-2">NaN</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">3</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет этот код?</h5>
+                        <div class="code">
+                           let y = 1; <br>
+                           let x = y = 2; <br><br>
+                           alert(x);<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-3">1</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-3">2</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-3">NaN</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-3">undefined</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr5-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr5-3">Будет ошибка</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">4</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет этот код?</h5>
+                        <div class="code">
+                           function F() { return F; } <br><br>
+                           alert( new F() instanceof F ); <br>
+                           alert( new F() instanceof Function );<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-4" name="r4" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr1-4">false, false.</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-4" name="r4" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr2-4">false, true.</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-4" name="r4" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr3-4">true, false.</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-4" name="r4" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr4-4">true, true.</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">5</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет этот код?</h5>
+                        <div class="code">
+                           f.call(f);<br>
+                           <br>
+                           function f() { <br>
+                           alert( this ); <br>
+                           } <br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr1-5">[object Object]</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-5">код функции f</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-5">ошибка: слишком глубокая рекурсия</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-5">ошибка: переменная f не определена</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr5-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr5-5">другое</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">6</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет alert?</h5>
+                        <div class="code">
+                           alert(str); <br>
+                           var str = "Hello";<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-6" name="r6" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-6">Hello</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-6" name="r6" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-6">undefined</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-6" name="r6" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-6">Будет ошибка</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">7</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет этот код?</h5>
+                        <div class="code">
+                           "use strict"; <br>
+                           a = null + undefined; <br>
+                           alert(a);<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-7">null</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-7">undefined</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-7">NaN</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-7">В коде ошибка</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">8</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Какой код корректно найдёт максимальное значение в непустом массиве arr?</h5>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb1-8" name="checkbox-8">
+                           <label class="custom-control-label code-font" for="cb1-8">arr.reduce(function(prev, item) { return Math.max(prev, item) })</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb2-8" name="checkbox-8">
+                           <label class="custom-control-label code-font" for="cb2-8">Math.max.apply(null, arr)</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb3-8" name="checkbox-8">
+                           <label class="custom-control-label code-font" for="cb3-8">Math.max(arr)</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb4-8" name="checkbox-8">
+                           <label class="custom-control-label code-font" for="cb4-8">arr.findMax()</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">9</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Какое из этих слов не имеет специального использования в JavaScript, никак не упомянуто в стандарте?</h5>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr1-9">this</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr2-9">instanceof</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr3-9">constructor</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr4-9">parent</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr5-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr5-9">new</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr6-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label" for="rr6-9">Все имеют специальное использование.</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">10</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Объявлена функция:</h5>
+                        <div class="code">function F() {}<br></div>
+                        <h5 class="question-title">Чем является F.prototype?</h5>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-10" name="r10" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-10">Обычным объектом</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-10" name="r10" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-10">Функцией</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-10" name="r10" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-10">Равен undefined.</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">11</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет код ниже?</h5>
+                        <div class="code">for(let key in {1:1, 0:0}) {<br>
+                           alert(key);<br>
+                           }<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-11" name="r11" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-11">1, затем 0</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-11" name="r11" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-11">0, затем 1</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-11" name="r11" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-11">В коде ошибка</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-11" name="r11" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-11">Зависит от браузера</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">12</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Чему равна переменная name ?</h5>
+                        <div class="code">let name = "пупкин".replace("п", "д")<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-12" name="r12" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-12">дудкин</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-12" name="r12" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-12">дупкин</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-12" name="r12" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-12">пупкин</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-12" name="r12" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-12">пудкин</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">13</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Чему равно значение выражения?</h5>
+                        <div class="code">4 - "5" + 0xf - "1e1"<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-13" name="r13" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-13">Цифре</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-13" name="r13" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-13">Строке</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-13" name="r13" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-13">NaN</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">14</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Каких операторов из этого списка нет в javascript?</h5>
+                        <div class="code">4 - "5" + 0xf - "1e1"<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb1-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb1-14">*</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb2-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb2-14">^</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb3-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb3-14">%</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb4-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb4-14">#</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb5-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb5-14">&</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb6-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb6-14">>></label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb7-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb7-14">>>></label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb8-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb8-14">!</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">15</span></div>
+                     <span class="lesson-type">Javascript</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выведет этот код?</h5>
+                        <div class="code">
+                           f.call(null); <br>
+                           function f() { <br>
+                           alert(this); <br>
+                           }<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-15">null</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-15">undefined</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-15">В коде ошибка</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-15">Другое</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-8 col-lg-9 col-md-11"><a href="#" class="btn btn-lg btn-primary">Отправить</a></div>
+            </div>
+         </div>
+      </section>
+      <footer class="bg-light text-center m-0 p-5">
+         <h3 class="mb-1 mt-4">Wolf Skills</h3>
+         <a href="#top" class="nav-link">Вернуться наверх</a>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+         new WOW().init();
+      </script>
+   </body>
+</html>

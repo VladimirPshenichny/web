@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Personal Area</title>
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/adaptive.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/site.webmanifest">
+      <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5f50cb">
+      <meta name="msapplication-TileColor" content="#603cba">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Favicon -->
+   </head>
+   <body>
+      <a href="https://forms.gle/J1XLq1xo13SU3tt76" target="_blank" class="questions">
+         <img src="img/wolf.png" alt="" class="wolf1">
+         <img src="img/wolf2.png" alt="" class="wolf2">
+         <p class="text-dark">Есть вопросы?</p>
+      </a>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3 fixed-top">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+               <img class="logo" src="img/logo.png" alt="">
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">О проекте</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Тесты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="index.html#cpp">C++</a>
+                           <a class="dropdown-item" href="index.html#csharp">C#</a>
+                           <a class="dropdown-item" href="index.html#js">JavaScript</a>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#rating">Рейтинг</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <a href="index.html" class="btn btn-outline-success my-2 my-sm-0">Главная</a>
+                  </form>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div class="wrap">
+         <section id="personal-area" class="bg-light">
+            <div class="container">
+               <div class="section-title wow flipInX" data-wow-duration="1000ms">
+                  <h2>Личный кабинет</h2>
+                  <div class="subtitle">Настройки профиля, прогресс по курсам</div>
+               </div>
+               <div class="section-content mt-5">
+                  <div class="cab-panel">
+                     <h3 class="mb-3">
+                        <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" aria-controls="collapseOne" aria-expanded="false">
+                        Отчет по курсам
+                        </a>
+                     </h3>
+                     <div id="collapseOne" class="collapse multi-collapse show lk-tab">
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="title-personal-area">Выбранные курсы</div>
+                           </div>
+                           <div class="col-12 col-md-6">
+                              <div class="card bg-light mb-4">
+                                 <div class="card-body">
+                                    <img class="card-lang-name" src="img/cpp-back2.png" alt="">
+                                    <h3 class="card-title">C++ </h3>
+                                    <p class="card-text w-75">Пройдено тестов: <span id="cpp_test_count">1</span></p>
+                                    <p class="card-text w-75">Уровень владения: 75%</p>
+                                    <div class="progress w-75">
+                                       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 col-md-6">
+                              <div class="card bg-light mb-4">
+                                 <div class="card-body">
+                                    <img class="card-lang-name" src="img/c-sharp-back.png" alt="">
+                                    <h3 class="card-title">C# </h3>
+                                    <p class="card-text w-75">Пройдено тестов: <span id="csharp_test_count">2</span></p>
+                                    <p class="card-text w-75">Уровень владения: 93%</p>
+                                    <div class="progress w-75">
+                                       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cab-panel mt-5">
+                     <h3 class="mb-3">
+                        <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" aria-controls="collapseOne" aria-expanded="false">
+                        Настройки профиля
+                        </a>
+                     </h3>
+                     <div id="collapseTwo" class="collapse multi-collapse lk-tab">
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="title-personal-area">Фото профиля</div>
+                           </div>
+                           <div class="col-12">
+                              <div class="row">
+                                 <div class="col-4 col-md-2">
+                                    <div class="media">
+                                       <img class="mr-3" src="img/avatar/default.png">
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-10 mt-4 mt-sm-0">
+                                    <div class="media-body">
+                                       <input name="person-avatar" type="file">
+                                       <div class="mt-5 col-12 col-md-6">
+                                          Эй, друг! Будет лучше, если твоя фотка будет не меньше, чем 256px на 256px и в формате .jpg или .png
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="title-personal-area mt-5">Основное</div>
+                           </div>
+                           <div class="col-12 col-md-8">
+                              <form>
+                                 <div class="form-row justify-content-between">
+                                    <div class="form-group col-md-5">
+                                       <label for="name">Имя</label>
+                                       <input type="text" class="form-control" id="name" value="Иван">
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                       <label for="surname">Фамилия</label>
+                                       <input type="text" class="form-control" id="surname" value="Иванов">
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                       <label for="nickname">Логин</label>
+                                       <input type="text" class="form-control" id="nickname" value="volk2000">
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                       <label for="email">Электронная почта</label>
+                                       <input type="email" class="form-control" id="email" value="ivanov@mail.ru">
+                                    </div>
+                                    <div class="form-group col-12 mt-4">
+                                       <button class="btn btn-success" disabled="disabled" type="submit">Сохранить</button>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="title-personal-area mt-5">Личная информация</div>
+                           </div>
+                           <div class="col-12 col-md-8">
+                              <form>
+                                 <div class="form-row row justify-content-between">
+                                    <div class="form-group col-md-5">
+                                       <label for="birthday">Дата рождения</label>
+                                       <input type="text" id="birthday" class="form-control" placeholder="Выбери дату">
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                       <label>Пол</label>
+                                       <div class="d-block"></div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="male" name="sex" class="custom-control-input">
+                                          <label class="custom-control-label" for="male">Я волчонок</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="female" name="sex" class="custom-control-input">
+                                          <label class="custom-control-label" for="female">Я волчонка</label>
+                                       </div>
+                                    </div>
+                                    <div class="form-group col-12">
+                                       <label for="bio">Расскажи о себе и своих интересах</label>
+                                       <textarea id="bio" rows="6" class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="custom-control custom-switch">
+                                          <input type="checkbox" class="custom-control-input" id="switch-1">
+                                          <label class="custom-control-label" for="switch-1">Я красавчик</label>
+                                       </div>
+                                    </div>
+                                    <div class="form-group col-12 mt-4">
+                                       <button class="btn btn-success" disabled="disabled" type="submit">Сохранить</button>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                             <div class="title-personal-area mt-5">Смена пароля</div>
+                          </div>
+                          <div class="col-12 col-md-8">
+                             <form>
+                                <div class="form-row row justify-content-between">
+                                   <div class="form-group col-md-5">
+                                       <label for="nickname">Старый пароль</label>
+                                       <input type="password" class="form-control" id="old_pass" value="">
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                       <label for="email">Новый пароль</label>
+                                       <input type="password" class="form-control" id="new_pass" value="">
+                                    </div>
+                                    <div class="form-group col-12 mt-4">
+                                      <button class="btn btn-success" disabled="disabled" type="submit">Изменить пароль</button>
+                                   </div>
+                                </div>
+                             </form>
+                          </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+      </section>
+      </div>
+      <footer class="bg-dark-blue text-center m-0 p-5">
+         <h3 class="mb-1 mt-4 text-white">Wolf Skills</h3>
+         <a href="#personal-area" class="nav-link">Вернуться наверх</a>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/main.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+      <script src="https://unpkg.com/flatpickr"></script>
+      <script>
+         new WOW().init();
+         flatpickr("#birthday", {});
+      </script>
+   </body>
+</html>

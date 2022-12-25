@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Проверка уровня знаний по C++</title>
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/adaptive.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/site.webmanifest">
+      <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5f50cb">
+      <meta name="msapplication-TileColor" content="#603cba">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Favicon -->
+   </head>
+   <body>
+      <a href="https://forms.gle/J1XLq1xo13SU3tt76" target="_blank" class="questions">
+         <img src="img/wolf.png" alt="" class="wolf1">
+         <img src="img/wolf2.png" alt="" class="wolf2">
+         <p class="text-dark">Есть вопросы?</p>
+      </a>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3 fixed-top">
+            <div class="container">
+               <a class="navbar-brand" href="#">
+               <img class="logo" src="img/logo.png" alt="">
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">О проекте</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Тесты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="testing-cpp.html">C++</a>
+                           <a class="dropdown-item" href="testing-c-sharp.html">C#</a>
+                           <a class="dropdown-item" href="testing-js.html">JavaScript</a>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#rating">Рейтинг</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <a href="sign-in.html" class="btn btn-outline-success my-2 my-sm-0">Авторизация</a>
+                  </form>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section class="bg-light" id="top">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="question col-xl-8 col-lg-9 col-md-11 mt-4 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">1</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Дан следующий код. Что выведется на печать?</h5>
+                        <div class="code">
+                           #include &#60;ostream&#62;<br> 
+                           <br>
+                           void print1(int v) <br> 
+                           { <br>
+                           &nbsp;&nbsp;&nbsp;std::cout << v; <br>
+                           } <br>
+                           void print2(int v) <br>
+                           { <br>
+                           &nbsp;&nbsp;&nbsp;std::cout << v*v; <br>
+                           } <br>
+                           <br>
+                           int main() <br> 
+                           { <br> 
+                           &nbsp;&nbsp;&nbsp;int n = 5; <br>
+                           &nbsp;&nbsp;&nbsp;void(*p1)(int); <br>
+                           &nbsp;&nbsp;&nbsp;void(*p2)(int); <br>
+                           <br>
+                           &nbsp;&nbsp;&nbsp;p1 = print1; <br>
+                           &nbsp;&nbsp;&nbsp;p2 = print2; <br>
+                           <br>
+                           &nbsp;&nbsp;&nbsp;p1(n); <br>
+                           &nbsp;&nbsp;&nbsp;p1++; <br>
+                           &nbsp;&nbsp;&nbsp;p1(++n); <br>
+                           <br>
+                           &nbsp;&nbsp;&nbsp;return 0; <br> 
+                           } <br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1" name="r1" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1">56</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2" name="r1" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2">536</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3" name="r1" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3">Ошибка компиляции</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4" name="r1" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4">525</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">2</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что будет выведено на терминал в результате выполнения следующего кода:</h5>
+                        <div class="code">
+                           #include &#60;iostream&#62; <br> 
+                           <br>
+                           using namespace std; <br>
+                           <br>
+                           int main() <br>
+                           {  <br>
+                           &nbsp;&nbsp;&nbsp;int i = 0; <br>
+                           <br>
+                           &nbsp;&nbsp;&nbsp;while(i < 10) <br>
+                           &nbsp;&nbsp;&nbsp;{ <br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i = 10; <br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << i << endl; <br> 
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i++; <br>
+                           &nbsp;&nbsp;&nbsp;} <br>
+                           <br>
+                           &nbsp;&nbsp;&nbsp;return 0; <br> 
+                           } <br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-2" name="r2" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-2">Бесконечный цикл</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-2" name="r2" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-2">0</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-2" name="r2" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-2">Ошибка компиляции</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-2" name="r2" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-2">10</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">3</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Исключением является...</h5>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-3">Ошибка выполнения</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-3">Ошибка времени компиляции</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-3">Логическая ошибка</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-3" name="r3" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-3">new Exception()</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">4</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Правило трёх («Закон Большой Тройки», «Большая Тройка», "The Rule of Three") — правило в C++, гласящее, что если класс или структура определяет один из следующих методов, то они должны явным образом определить все три метода. О каких методах идёт речь (выберите из списка)?</h5>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb1-4" name="checkbox-11">
+                           <label class="custom-control-label" for="cb1-4">Оператор = (присваивания копированием)</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb2-4" name="checkbox-11">
+                           <label class="custom-control-label" for="cb2-4">Оператор</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb3-4" name="checkbox-11">
+                           <label class="custom-control-label" for="cb3-4">Оператор ></label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb4-4" name="checkbox-11">
+                           <label class="custom-control-label" for="cb4-4">Конструктор</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb5-4" name="checkbox-11">
+                           <label class="custom-control-label" for="cb5-4">Конструктор копирования</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb6-4" name="checkbox-11">
+                           <label class="custom-control-label" for="cb6-4">Деструктор</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">5</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Сколько параметров можно передать в деструктор?</h5>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-5">Максимум 1</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-5">Не более 10</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-5">Не более 3</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-5">Нельзя передавать параметры в деструктор</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr5-5" name="r5" class="custom-control-input">
+                           <label class="custom-control-label" for="rr5-5">Не более 15</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">6</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Каким будет <span class="code-font">x</span>?</h5>
+                        <div class="code">
+                           int x = 2 + 1;<br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-6" name="r6" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-6">1</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-6" name="r6" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-6">3</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-6" name="r6" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-6">2</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-6" name="r6" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-6">Будет ошибка</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr5-6" name="r6" class="custom-control-input">
+                           <label class="custom-control-label" for="rr5-6">0</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">7</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Где правильно указана переменная?</h5>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr1-7">char sym = 'a';</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr2-7">var str = "Hi";</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr3-7">done = true;</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr4-7">int num = "1";</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr5-7" name="r7" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr5-7">float x = 32,14;</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">8</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что покажет код ниже?</h5>
+                        <div class="code">
+                           int const a = 5; <br>
+                           a++; <br>
+                           cout << a; <br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-8" name="r8" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-8">5</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-8" name="r8" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-8">6</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-8" name="r8" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-8">0</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-8" name="r8" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-8">Ошибку</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">9</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Какие вы видите ошибки в этом коде?</h5>
+                        <div class="code">
+                           class A <br> 
+                           { <br>
+                           public: <br>
+                           &nbsp;&nbsp;&nbsp;A(int x) : _x(x) {} //1 <br> 
+                           private: <br>
+                           &nbsp;&nbsp;&nbsp;int _x; <br>
+                           }; <br>
+                           <br>                           
+                           int main() <br>
+                           { <br>  
+                           &nbsp;&nbsp;&nbsp;A a = 10; //2 <br>
+                           &nbsp;&nbsp;&nbsp;A b(a);    <br>
+                           <br>
+                           &nbsp;&nbsp;&nbsp;return 0; <br>  
+                           } <br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-9">В строке 2 будет ошибка, т.к. у A не объявлен копирующий конструктор по умолчанию</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-9">В строке 1 будет ошибка, т.к. таким образом нельзя объявлять переменные класса</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-9">В строке 2 будет ошибка, т.к. у А нет публичного (public) конструктора по умолчанию</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-9">Ошибок нет</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr5-9" name="r9" class="custom-control-input">
+                           <label class="custom-control-label" for="rr5-9">В строке 2 будет ошибка, т.к. у А нет конструктора по умолчанию</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">10</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Какое значение вернет функция:</h5>
+                        <div class="code">
+                           int f() <br>
+                           { <br>
+                           &nbsp;&nbsp;&nbsp;return 4,(5),6; <br> 
+                           } <br> 
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-10" name="r10" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-10">Результат не определен</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-10" name="r10" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-10">Код не скомпилируется</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-10" name="r10" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-10">4</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-10" name="r10" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-10">5</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr5-10" name="r10" class="custom-control-input">
+                           <label class="custom-control-label" for="rr5-10">6</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">11</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Какие строки вызовут ошибку компиляции?</h5>
+                        <div class="code">
+                           #include &#60;iostream&#62; <br>
+                           template &#60;typename T1, typename T2&#62; void f(T1 x, T2 y) <br>
+                           { <br>
+                           &nbsp;&nbsp;&nbsp;std::cout << x << " " << y <<     std::endl; <br>
+                           } <br> 
+                           <br>
+                           class A <br> 
+                           { <br>
+                           public: <br>
+                           &nbsp;&nbsp;&nbsp;A(int x) : val(x) { }  <br>
+                           <br>    
+                           private: <br>
+                           &nbsp;&nbsp;&nbsp;int val; <br>
+                           }; <br> 
+                           <br>    
+                           int main() <br> 
+                           { <br>
+                           &nbsp;&nbsp;&nbsp;f
+                           <char>
+                           ('1', "2");          // 1 <br>
+                           &nbsp;&nbsp;&nbsp;f
+                           <string>
+                           ('1', "2");        // 2 <br>
+                           &nbsp;&nbsp;&nbsp;f('1', "2");                // 3 <br>
+                           &nbsp;&nbsp;&nbsp;f<A, int> (1, 2);           // 4 <br>
+                           &nbsp;&nbsp;&nbsp;f(1.0, 2);                  // 5 <br>
+                           &nbsp;&nbsp;&nbsp;return 0; <br>
+                           } <br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb1-11" name="checkbox-11">
+                           <label class="custom-control-label code-font" for="cb1-11">1</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb2-11" name="checkbox-11">
+                           <label class="custom-control-label code-font" for="cb2-11">2</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb3-11" name="checkbox-11">
+                           <label class="custom-control-label code-font" for="cb3-11">3</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb4-11" name="checkbox-11">
+                           <label class="custom-control-label code-font" for="cb4-11">4</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb5-11" name="checkbox-11">
+                           <label class="custom-control-label code-font" for="cb5-11">5</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb6-11" name="checkbox-11">
+                           <label class="custom-control-label code-font" for="cb6-11">Скомпилируется без ошибок</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">12</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что выдаст код ниже?</h5>
+                        <div class="code">
+                           char s[] = "hello", t[] = "hello"; <br>
+                           if(s == t) <br>
+                           &nbsp;&nbsp;&nbsp;cout << "True"; <br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-12" name="r12" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-12">Ничего не выведет, так как идет сравнение указателей</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-12" name="r12" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-12">True</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-12" name="r12" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-12">Нельзя сравнивать массивы на равенство</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-12" name="r12" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-12">Будет ошибка в коде</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">13</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Что покажет код ниже?</h5>
+                        <div class="code">
+                           char *s = "Fine";  <br>
+                           *s = 'N';    <br>
+                           cout << s << endl; <br>
+                        </div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-13" name="r13" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr1-13">Nine</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-13" name="r13" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr2-13">Fine</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-13" name="r13" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr3-13">NFine</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-13" name="r13" class="custom-control-input">
+                           <label class="custom-control-label code-font" for="rr4-13">Ошибку</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">14</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Какие типы имеют a и b?</h5>
+                        <div class="code">char * const a, b; <br></div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb1-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb1-14">a: char const</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb2-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb2-14">a: char</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb3-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb3-14">a: char * const</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb4-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb4-14">b: char const</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb5-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb5-14">b: char</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input" id="cb6-14" name="checkbox-14">
+                           <label class="custom-control-label code-font" for="cb6-14">b: char * const</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="question col-xl-8 col-lg-9 col-md-11 mb-5">
+                  <div class="card card-body">
+                     <div class="question-name">Вопрос <span class="question-number">15</span></div>
+                     <span class="lesson-type">C++</span>
+                     <article class="question-field">
+                        <h5 class="question-title">Каким будет значение переменной a в результате выполнения данного фрагмента кода:</h5>
+                        <div class="code">int a = 5 > 6 ? 8 : 0; <br></div>
+                     </article>
+                     <div class="answers">
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr1-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr1-15">6</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr2-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr2-15">5</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr3-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr3-15">8</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-15">0</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                           <input type="radio" id="rr4-15" name="r15" class="custom-control-input">
+                           <label class="custom-control-label" for="rr4-15">код не скомпилируется</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-8 col-lg-9 col-md-11"><a href="#" class="btn btn-lg btn-primary">Отправить</a></div>
+            </div>
+         </div>
+      </section>
+      <footer class="bg-light text-center m-0 p-5">
+         <h3 class="mb-1 mt-4">Wolf Skills</h3>
+         <a href="#top" class="nav-link">Вернуться наверх</a>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+         new WOW().init();
+      </script>
+   </body>
+</html>
